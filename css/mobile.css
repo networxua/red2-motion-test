@@ -1,0 +1,200 @@
+/* Mobile-only redesign (<=767px). Desktop is untouched: everything lives inside this query. */
+@media (max-width:767px){
+  :root{--mgap:56px;--mpad:20px}
+  html[data-bg]{--panel-gap:56px;--panel-pad:48px}
+
+  /* ---------- Type scale ---------- */
+  body{font-size:15px;line-height:1.6}
+  .lead,p.lead{font-size:15.5px;line-height:1.6}
+  .disp.h-m,.h-m,.sh__t{font-size:30px !important;line-height:1.1;font-weight:300;letter-spacing:-.035em}
+  .disp.h-l,.h-l{font-size:32px !important;line-height:1.08;font-weight:300}
+  .disp em,.h-m em,.h-l em{font-weight:200;font-size:1em}
+  h3,h4,h5{font-weight:400}
+  .brand-script{font-family:var(--wide) !important;font-size:1em;letter-spacing:-.02em}
+  b,strong{font-weight:500}
+
+  /* ---------- Header ---------- */
+  .hdr__dist{display:none !important}
+  .hdr__row{min-height:60px}
+  .hdr__logo img{height:46px}
+  .burger{width:44px;height:44px}
+
+  /* ---------- Section rhythm, fewer rules ---------- */
+  html[data-bg] .panel__k,.panel__k{display:none !important}
+  html[data-bg] .sh--plain,html[data-bg] .champ__row,html[data-bg] #club .clubx__copy h2{border-bottom:0;padding-bottom:0}
+  html[data-bg] .sh{margin-bottom:24px}
+  .sh{gap:16px}
+  .mq--dark,.railhint{display:none !important}
+  .btn{height:48px;min-height:48px;font-size:11px;padding:0 6px 0 20px;gap:12px}
+  .btn b{width:36px;height:36px}
+  .btn--ghost{box-shadow:inset 0 0 0 1px rgba(236,230,220,.28)}
+
+  /* ---------- Hero ---------- */
+  body[data-page=home] .hero{height:auto;max-height:none;min-height:calc(100svh - 72px);display:flex;flex-direction:column;justify-content:flex-end}
+  body[data-page=home] .hero .reel{position:absolute;inset:0}
+  body[data-page=home] .reel__tag,body[data-page=home] .hero .tree{display:none !important}
+  body[data-page=home] .hero__foot{position:relative;padding:0 var(--mpad) 16px !important;margin-top:auto}
+  body[data-page=home] .hero__in{padding-bottom:22px;gap:12px}
+  body[data-page=home] .hero__t,body[data-page=home] .hero__t em{font-family:var(--wide) !important;font-style:normal !important;font-weight:300 !important;letter-spacing:-.045em !important}
+  body[data-page=home] .hero__t{font-size:44px !important;line-height:1 !important}
+  body[data-page=home] .hero__t .ln{padding-bottom:.06em}
+  body[data-page=home] .hero__t em{font-weight:200 !important}
+  body[data-page=home] .hero__side p{font-size:15px;line-height:1.5;opacity:.85;max-width:30ch}
+  body[data-page=home] .lanes{grid-template-columns:1fr 1fr;gap:10px;border-top:0}
+  body[data-page=home] .lane{flex-direction:column;align-items:flex-start;justify-content:space-between;gap:18px;min-height:112px;padding:16px !important;border:0 !important;border-radius:16px;background:rgba(14,12,11,.62);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);font:400 15px/1.2 var(--wide) !important;letter-spacing:-.01em !important;text-transform:none !important}
+  body[data-page=home] .lane+.lane{border-left:0 !important}
+  body[data-page=home] .lane small{display:none}
+  body[data-page=home] .lane b{align-self:flex-end;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:17px}
+
+  /* ---------- 01 Two lanes: swipe cards ---------- */
+  body[data-page=home] .duo{display:flex !important;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-inline:var(--mpad) !important;scroll-padding-inline:var(--mpad)}
+  body[data-page=home] .duo::-webkit-scrollbar{display:none}
+  body[data-page=home] .duo__c{flex:0 0 82%;min-height:0 !important;aspect-ratio:4/5;scroll-snap-align:start;border-radius:18px}
+  body[data-page=home] .duo__n,body[data-page=home] .duo__b ul{display:none !important}
+  body[data-page=home] .duo__b{padding:20px;gap:12px}
+  body[data-page=home] .duo__b h3{font:300 26px/1.05 var(--wide) !important;letter-spacing:-.03em}
+  body[data-page=home] .duo__go{border-top:0;padding-top:0;font:400 12px/1.3 var(--sans);letter-spacing:0;text-transform:none;opacity:.9}
+  body[data-page=home] .duo__go b{width:40px;height:40px;flex:none}
+
+  /* ---------- 02 Showroom ---------- */
+  body[data-page=home] #showroom .g-row{display:none !important}
+  .car__s{gap:0 10px;row-gap:2px}
+  .car__s span{padding:0 !important;border:0 !important;background:none !important;box-shadow:none !important;font-size:12px !important;opacity:.8}
+  .car__s span+span::before{content:"·";margin-right:10px;opacity:.6}
+  .car__hl{display:none !important}
+  .car,.car *{filter:none !important}
+  .rail .car{opacity:1 !important}
+
+  /* ---------- 03 Owner: stats as swipe cards ---------- */
+  body[data-page=home] .champ__b{padding:4px var(--mpad) 8px}
+  body[data-page=home] .champ__img{height:62vw;min-height:0}
+  body[data-page=home] .champ__ttl{font-weight:300}
+  body[data-page=home] .slip{display:flex !important;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;background:none !important;box-shadow:none !important;padding:0 var(--mpad) !important;margin:24px calc(var(--mpad) * -1) 0 !important;transform:none !important;border:0 !important;scroll-padding-inline:var(--mpad)}
+  body[data-page=home] .slip::-webkit-scrollbar{display:none}
+  body[data-page=home] .slip__h,body[data-page=home] .slip__f{display:none !important}
+  body[data-page=home] .slip__r{flex:0 0 44%;scroll-snap-align:start;display:flex !important;flex-direction:column-reverse;justify-content:flex-end;gap:8px;padding:18px 16px !important;border:0 !important;border-radius:14px;background:rgba(236,230,220,.06);font:400 12.5px/1.35 var(--sans) !important;letter-spacing:0 !important;text-transform:none !important;color:var(--ink-dim) !important}
+  body[data-page=home] .slip__r b{font:300 24px/1 var(--wide) !important;letter-spacing:-.03em;color:#fff !important;white-space:nowrap}
+
+  /* ---------- 04 Why: facts as swipe cards, stats in a row ---------- */
+  body[data-page=home] main>section:not(.hero) > .trust{display:flex !important;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;width:100% !important;padding-inline:var(--mpad);scroll-padding-inline:var(--mpad)}
+  body[data-page=home] .trust::-webkit-scrollbar{display:none}
+  body[data-page=home] .tr,body[data-page=home] .tr+.tr{flex:0 0 78%;scroll-snap-align:start;padding:22px 20px !important;border:0 !important;border-radius:16px;background:rgba(236,230,220,.06)}
+  body[data-page=home] .tr h4{font:300 21px/1.15 var(--wide);letter-spacing:-.02em;margin-bottom:10px}
+  body[data-page=home] .tr p{font-size:14.5px;line-height:1.55}
+  body[data-page=home] .proof{grid-template-columns:repeat(3,1fr) !important;gap:12px !important;margin-top:36px}
+  body[data-page=home] .proof>div{border:0 !important;padding:0 !important}
+  body[data-page=home] .proof .num{font-size:30px !important;font-weight:300 !important}
+  body[data-page=home] .proof>div>span:last-child{font-size:12px;line-height:1.35}
+
+  /* ---------- 05 Reviews ---------- */
+  .rev__nav{display:none !important}
+  .rev__tabs{gap:8px}
+  html[data-bg] .rev__tabs button{box-shadow:none;background:rgba(236,230,220,.07);font-size:11px}
+  html[data-bg] .rev__tabs button.on{background:var(--red)}
+  html[data-bg] .rev__card{flex-basis:82% !important;box-shadow:none !important;background:rgba(236,230,220,.06) !important;border-radius:18px;padding:22px 20px}
+  body[data-page=home] main>section:not(.hero) > .rev{width:100% !important}
+  body[data-page=home] .rev__tabs,body[data-page=home] .rev__all{margin-inline:var(--mpad)}
+  body[data-page=home] .rev__grid{padding-inline:var(--mpad);scroll-padding-inline:var(--mpad);margin-top:20px}
+  .rev__all{font-size:13px;opacity:.85}
+
+  /* ---------- 06 Boxes: services as swipe cards ---------- */
+  body[data-page=home] #boxes .accent-shot{margin:0 var(--mpad) 32px !important;border-radius:18px;overflow:hidden}
+  body[data-page=home] #boxes .idx{display:flex !important;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;width:100% !important;padding-inline:var(--mpad);scroll-padding-inline:var(--mpad);border:0 !important}
+  body[data-page=home] #boxes .idx::-webkit-scrollbar{display:none}
+  body[data-page=home] .idx__r{flex:0 0 72%;scroll-snap-align:start;display:flex !important;flex-direction:column;gap:10px;min-height:190px;padding:22px 20px !important;border:0 !important;border-radius:16px;background:rgba(236,230,220,.06)}
+  body[data-page=home] .idx__r h4{font:300 20px/1.15 var(--wide);letter-spacing:-.02em}
+  body[data-page=home] .idx__r p{font-size:14px;line-height:1.5}
+  body[data-page=home] .idx__r .ar{margin-top:auto;align-self:flex-end;width:44px;height:44px;border:0 !important;background:var(--red);color:#fff !important;border-radius:50%;display:grid;place-items:center}
+
+  /* ---------- 07 Club: swipe cards ---------- */
+  body[data-page=home] .clubx__copy{gap:16px}
+  body[data-page=home] .clubx__copy p{font-size:15px}
+  body[data-page=home] #club .club{display:flex !important;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-inline:var(--mpad) !important;scroll-padding-inline:var(--mpad);margin-top:32px}
+  body[data-page=home] #club .club::-webkit-scrollbar{display:none}
+  body[data-page=home] .club__c,body[data-page=home] .club__list{flex:0 0 82%;min-height:0 !important;aspect-ratio:4/5;scroll-snap-align:start;border-radius:18px;overflow:hidden;padding:20px !important}
+  body[data-page=home] .club__c .kicker{display:none}
+  body[data-page=home] .club__c h4{font:300 22px/1.12 var(--wide);letter-spacing:-.02em}
+  body[data-page=home] .club__c p{font-size:14px;line-height:1.45}
+  body[data-page=home] .club__list{display:grid !important;grid-template-columns:1fr !important;align-content:center;gap:0 !important;background:rgba(236,230,220,.06)}
+  body[data-page=home] .club__list div{padding:14px 0 !important;border:0 !important}
+  body[data-page=home] .club__list b{font:300 19px/1.2 var(--wide);display:block;margin-bottom:4px}
+  body[data-page=home] .club__list span{font-size:13px;opacity:.8}
+
+  /* ---------- 08 Dyno ---------- */
+  body[data-page=home] #dyno .split{gap:20px}
+  body[data-page=home] .dyno__art{border-radius:16px;overflow:hidden;max-height:200px}
+
+  /* ---------- 09 Contacts: two clean cards ---------- */
+  body[data-page=home] #contacts > .lead{margin:-8px auto 24px !important}
+  body[data-page=home] .loc{display:grid !important;gap:12px}
+  body[data-page=home] .loc__half{border:0 !important;border-radius:18px;background:rgba(236,230,220,.06);padding:22px 20px !important;display:grid;gap:10px;align-content:start}
+  body[data-page=home] .loc__half .brand-logo{height:40px !important;padding:4px 6px !important;border-radius:8px}
+  body[data-page=home] .loc__half h5{font:300 20px/1.2 var(--wide);letter-spacing:-.02em;margin:6px 0 0}
+  body[data-page=home] .loc__half p{font-size:14.5px;line-height:1.5;opacity:.85}
+  body[data-page=home] .loc__map{display:none !important}
+  .m-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+  .m-acts .topbar__wa,.m-maps{min-height:44px !important;margin:0 !important}
+  .m-maps{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:99px;background:var(--red);color:#fff;font:500 11px/1.15 var(--wide);letter-spacing:.06em;text-transform:uppercase}
+
+  /* ---------- Footer ---------- */
+  .ft__cta{padding-block:48px 36px !important;gap:22px}
+  body[data-page=home] .ft__grid > div:nth-child(-n+2){display:none !important}
+  .ft__grid{gap:20px 16px;padding-block:8px 24px}
+  .ft__grid h6{font-size:10px;letter-spacing:.16em;margin-bottom:6px}
+  .ft__grid p,.ft__grid a{font-size:13.5px}
+  .ft__mega{font-size:22vw !important;opacity:.5;line-height:1}
+  .ft__legal{font-size:11.5px;padding-bottom:12px}
+
+  /* ---------- Dock + bot ---------- */
+  .dock{left:12px !important;right:12px !important;bottom:calc(8px + env(safe-area-inset-bottom)) !important;gap:6px;padding:4px !important;border-radius:99px;background:rgba(12,12,12,.78) !important}
+  .dock a,.dock button.pr{height:44px !important;min-height:44px !important;font-size:10.5px !important;letter-spacing:.08em}
+  .dock a.wa{background:#188842 !important;color:#fff}
+  .dock a.pr,.dock button.pr{background:var(--red) !important;color:#fff}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom)) !important}
+  .bt-l{width:48px !important;height:48px !important;right:14px !important;bottom:calc(68px + env(safe-area-inset-bottom)) !important}
+  .bt-hi{right:70px !important;bottom:calc(70px + env(safe-area-inset-bottom)) !important;max-width:220px !important;font-size:12.5px !important;border-radius:14px 14px 4px 14px}
+  .bt-hi{display:none !important}
+  html.m-hi-show:not(.m-hi-done) .bt-hi:not([hidden]){display:block !important}
+  /* ---------- Car cards: calmer, still fully sharp ---------- */
+  a.car.is-ig{background:#121010 !important;box-shadow:none !important;padding:14px 14px 14px !important;gap:14px !important}
+  a.car.is-ig::before{display:none !important}
+  a.car.is-ig .car__h h3{font-size:20px !important;letter-spacing:.02em !important}
+  a.car.is-ig .car__specs{gap:10px 12px !important}
+  a.car.is-ig .car__spec{background:none !important;padding:0 !important;grid-template-columns:18px minmax(0,1fr) !important;column-gap:8px !important;row-gap:2px !important}
+  a.car.is-ig .car__spec svg{grid-row:1/span 2 !important;grid-column:1 !important;width:16px !important;height:16px !important;opacity:.85}
+  a.car.is-ig .car__spec b,a.car.is-ig .car__spec small{grid-column:2 !important}
+  a.car.is-ig .car__spec b{font-weight:400 !important;font-size:12px !important}
+  a.car.is-ig .car__spec small{font-size:8.5px !important;color:rgba(255,255,255,.55) !important}
+  a.car.is-ig .car__p{background:none !important;padding:0 !important;font:300 22px/1 var(--wide) !important;letter-spacing:-.01em !important}
+  a.car.is-ig .car__go{background:var(--red) !important;border-radius:99px !important;min-height:46px !important;font-size:11px !important}
+
+  /* fixes */
+  body[data-page=home] .lane span{font-weight:400}
+  body[data-page=home] .lane{min-height:100px}
+  body[data-page=home] .trust,body[data-page=home] .proof{border:0 !important}
+  body[data-page=home] .idx__r{align-items:stretch !important}
+  body[data-page=home] .idx__r,body[data-page=home] .idx__r h4,body[data-page=home] .idx__r p{text-align:left !important}
+  body[data-page=home] .slip__r{flex-basis:58%}
+  body[data-page=home] .slip__r b{font-size:21px !important}
+  body[data-page=home] .club__c img{position:absolute !important;z-index:0 !important}
+  body[data-page=home] .club__c::before{z-index:1;background:linear-gradient(180deg,rgba(12,12,12,0) 35%,rgba(12,12,12,.7) 62%,rgba(12,12,12,.96)) !important}
+  /* ---------- Mobile menu: lighter type, language switch visible ---------- */
+  .mnav{padding:96px var(--mpad) calc(28px + env(safe-area-inset-bottom))}
+  .mnav a.big{font:300 30px/1.1 var(--wide) !important;letter-spacing:-.03em;padding:12px 0;border-bottom:1px solid rgba(236,230,220,.08)}
+  .mnav__foot{gap:16px}
+  .mnav .lang{display:flex !important;gap:6px}
+  .mnav .lang button{min-width:52px;min-height:44px;border-radius:99px;background:rgba(236,230,220,.07);opacity:.6}
+  .mnav .lang button.on{opacity:1;background:var(--red);color:#fff}
+  .mnav__foot .btn{width:100%;justify-content:space-between}
+  html.menu-open .dock,html.menu-open .bt-l,html.menu-open .bt-hi{opacity:0 !important;pointer-events:none !important}
+  .rev__more{min-width:44px;padding-right:8px}
+  .ft__grid a{min-width:44px}
+  body[data-page=home] .dyno__art{height:190px !important;min-height:0 !important;aspect-ratio:auto !important}
+  .ft__grid > div{display:flex;flex-direction:column;align-items:flex-start}
+  .mq--brand .mq__t span{font-weight:300 !important;font-style:normal !important;font-size:20px !important;letter-spacing:.02em !important;opacity:.75}
+  .mq--brand{border:0 !important}
+  .topbar{font-size:10px !important;gap:4px 12px !important;padding-top:6px !important;letter-spacing:.03em !important}
+  .topbar__tel+.topbar__tel::before{margin:0 4px}
+  .ft__tel a{min-height:40px;display:flex !important;align-items:center}
+  .ft__tel .tel-g a{min-height:40px;white-space:nowrap}
+}
