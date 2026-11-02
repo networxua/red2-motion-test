@@ -1,0 +1,71 @@
+/* [ЗАГЛУШКА: звірити з брендбуком клієнта] */
+:root{
+  --red:#c1272d;
+  --tar:#0c0b0a;
+  --bone:#ece6dc;
+  --wide:"Science Gothic",system-ui,sans-serif;
+  --serif:"Cormorant",Georgia,serif;
+  --sans:"Mulish",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--tar);color:var(--bone);font:400 16px/1.45 var(--sans)}
+img{display:block;max-width:100%}
+a{color:inherit}
+.stage{display:none;position:relative;height:100svh;width:100%;overflow:hidden;background:#070605}
+html.scrub .stage{display:block}
+html.scrub .flow{display:none}
+#view,.poster,.poster img{position:absolute;inset:0;width:100%;height:100%}
+.poster{z-index:1;transition:opacity .35s linear}
+.poster img{object-fit:cover;height:100%}
+.poster.is-off{opacity:0;pointer-events:none}
+#view{z-index:0}
+.scrim{position:absolute;inset:0;z-index:2;pointer-events:none;background:
+  linear-gradient(90deg,rgba(7,6,5,.88) 0%,rgba(7,6,5,.42) 26%,rgba(7,6,5,0) 50%),
+  linear-gradient(180deg,rgba(7,6,5,.45),transparent 16% 60%,rgba(7,6,5,.8))}
+.logo{position:absolute;z-index:4;top:18px;left:18px}
+.logo img{height:34px;width:auto}
+.bar{position:absolute;z-index:4;top:0;left:0;right:0;height:2px;background:rgba(236,230,220,.16)}
+.bar i{display:block;height:100%;width:100%;background:var(--red);transform:scaleX(0);transform-origin:0 50%}
+.beat{position:absolute;z-index:3;left:0;right:0;bottom:0;padding:0 22px calc(28px + env(safe-area-inset-bottom));max-width:18em;opacity:0}
+.kicker{margin:0 0 10px;font:500 11px/1 var(--wide);letter-spacing:.18em;text-transform:uppercase;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.8)}
+h1,h2{margin:0;font:500 clamp(46px,12vw,92px)/.9 var(--serif);letter-spacing:-.03em;text-wrap:balance;text-shadow:0 8px 28px rgba(0,0,0,.72)}
+.sub{margin:14px 0 0;font-size:16px;color:rgba(236,230,220,.9);text-shadow:0 2px 14px rgba(0,0,0,.75)}
+.cta{display:flex;gap:10px;margin:18px 0 0;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:99px;text-decoration:none;font:500 12px/1 var(--wide);letter-spacing:.12em;text-transform:uppercase}
+.btn.ghost{box-shadow:inset 0 0 0 1px rgba(236,230,220,.72)}
+.btn.beam{position:relative;z-index:0;background:var(--red);color:#fff}
+.btn.beam::before{
+  content:"";position:absolute;inset:-2px;border-radius:inherit;padding:2px;z-index:-1;pointer-events:none;
+  background:conic-gradient(from var(--beam),transparent 0 64%,#fff 80%,#ff2a33 90%,transparent 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  mask-composite:exclude;
+  animation:beam 2.8s linear infinite;
+}
+@property --beam{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes beam{to{--beam:1turn}}
+.flow{display:block}
+.shot{position:relative;min-height:100svh;display:grid;align-items:end;background:#070605}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shot div{position:relative;z-index:1;padding:24px 22px 36px;background:linear-gradient(180deg,transparent,rgba(7,6,5,.88))}
+.contact{padding:72px 22px 88px;max-width:960px;margin:0 auto}
+.contact h2{font-size:clamp(32px,5vw,48px);margin:0 0 12px}
+.cols{display:grid;gap:36px;margin-top:22px}
+.contact p{margin:0 0 14px;color:rgba(236,230,220,.86)}
+.contact .btn{margin-top:6px}
+.note{margin-top:36px;color:rgba(236,230,220,.45);font-size:12px;letter-spacing:.08em}
+@media (min-width:800px){
+  .beat{padding:0 7vw 8vh;max-width:14em}
+  h1,h2{font-size:clamp(64px,6vw,104px)}
+  .logo{top:28px;left:36px}
+  .logo img{height:40px}
+  .cols{grid-template-columns:1fr 1fr;gap:48px}
+  .contact{padding:96px 36px 110px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  html.scrub .stage{display:none}
+  html.scrub .flow{display:block}
+  .btn.beam::before{animation:none}
+}
