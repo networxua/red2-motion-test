@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#15120f">
+<title>Red2 Auto Gallery · scroll</title>
+<meta name="description" content="El coche perfecto. El precio ideal. Red2 Auto Gallery, Marbella.">
+<link rel="icon" href="../img/logo-red2.png">
+<link rel="preload" as="image" href="../media/posters/s1.webp" fetchpriority="high">
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="../css/scroll.css">
+<script>
+document.documentElement.classList.add("js");
+if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.documentElement.classList.add("reduce");
+} else {
+  document.documentElement.classList.add("motion");
+}
+</script>
+</head>
+<body>
+<header class="hdr">
+  <a href="../"><img src="../img/logo-red2.png" alt="Red2 Auto Gallery" width="440" height="75"></a>
+  <p class="lang"><b>ES</b> · [ЗАГЛУШКА: RU/EN]</p>
+  <a class="hdr__phone" href="tel:+34699589358">+34 699 589 358</a>
+</header>
+
+<div class="film" id="film">
+  <div class="reel" id="reel">
+    <div class="stage">
+      <canvas id="stage" aria-hidden="true"></canvas>
+      <img class="stage__poster" src="../media/posters/s1.webp" alt="" width="720" height="405">
+      <div class="scrim" aria-hidden="true"></div>
+      <div class="copy">
+        <article class="beat" data-i="0">
+          <p class="kicker line">Red2 Auto Gallery · Marbella</p>
+          <h1 class="line">El coche perfecto. El precio ideal.</h1>
+          <div class="actions">
+            <a class="btn" href="tel:+34699589358">Llamar</a>
+            <a class="btn btn--ghost" href="https://wa.me/34699589358">Whatsapp</a>
+          </div>
+        </article>
+        <article class="beat" data-i="1">
+          <p class="line">Descubre una cuidada selección de vehículos de media y alta gama, revisados íntegramente y listos para disfrutar.</p>
+        </article>
+        <article class="beat" data-i="2">
+          <h2 class="line">SELECCIONADO PERSONALMENTE</h2>
+          <p class="line">Todos nuestros vehículos se seleccionan personalmente, se inspeccionan profesionalmente y se comprueba que no tienen ningún defecto.</p>
+        </article>
+        <article class="beat" data-i="3">
+          <h2 class="line">Taller RED2 auto space</h2>
+          <p class="line">Diagnóstico OEM (ODIS, PIWIS, ISTA, entre otros) · Detailing, PPF y vinilo · Mantenimiento de vehículos eléctricos e híbridos (acreditación HV)</p>
+        </article>
+        <article class="beat" data-i="4">
+          <h2 class="line">Somos bicampeones de España en drag racing</h2>
+          <p class="line">Calle Fragua nº 20 (Esquina granito), 29603 Marbella · Lunes a Viernes 9:00–19:00, Sábado 10:00–14:00 · +34 699 589 358</p>
+        </article>
+      </div>
+      <nav class="dots" aria-label="Escenas">
+        <button type="button" data-jump="0" aria-current="true"><span></span><span class="sr">Fachada</span></button>
+        <button type="button" data-jump="1"><span></span><span class="sr">Showroom</span></button>
+        <button type="button" data-jump="2"><span></span><span class="sr">Detalles</span></button>
+        <button type="button" data-jump="3"><span></span><span class="sr">Taller</span></button>
+        <button type="button" data-jump="4"><span></span><span class="sr">Contacto</span></button>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="flow">
+  <section class="shot">
+    <img src="../media/posters/s1.webp" alt="Fachada de Red2 Auto Gallery en Marbella, con el rótulo de la entrada." width="720" height="405">
+    <div class="shot__body">
+      <p class="kicker">Red2 Auto Gallery · Marbella</p>
+      <h1>El coche perfecto. El precio ideal.</h1>
+      <div class="actions">
+        <a class="btn" href="tel:+34699589358">Llamar</a>
+        <a class="btn btn--ghost" href="https://wa.me/34699589358">Whatsapp</a>
+      </div>
+    </div>
+  </section>
+  <section class="shot">
+    <img src="../media/posters/s2.webp" alt="Interior del showroom de Red2 Auto Gallery." width="720" height="405" loading="lazy" decoding="async">
+    <div class="shot__body">
+      <p>Descubre una cuidada selección de vehículos de media y alta gama, revisados íntegramente y listos para disfrutar.</p>
+    </div>
+  </section>
+  <section class="shot">
+    <img src="../media/posters/s3.webp" alt="Detalle de un emblema en el showroom de Red2." width="720" height="405" loading="lazy" decoding="async">
+    <div class="shot__body">
+      <h2>SELECCIONADO PERSONALMENTE</h2>
+      <p>Todos nuestros vehículos se seleccionan personalmente, se inspeccionan profesionalmente y se comprueba que no tienen ningún defecto.</p>
+    </div>
+  </section>
+  <section class="shot">
+    <img src="../media/posters/s4.webp" alt="Elevadores del taller RED2 auto space." width="720" height="405" loading="lazy" decoding="async">
+    <div class="shot__body">
+      <h2>Taller RED2 auto space</h2>
+      <p>Diagnóstico OEM (ODIS, PIWIS, ISTA, entre otros) · Detailing, PPF y vinilo · Mantenimiento de vehículos eléctricos e híbridos (acreditación HV)</p>
+    </div>
+  </section>
+  <section class="shot">
+    <img src="../media/posters/s5.webp" alt="Zona de elevadores del taller RED2 auto space." width="720" height="405" loading="lazy" decoding="async">
+    <div class="shot__body">
+      <h2>Somos bicampeones de España en drag racing</h2>
+      <p>Calle Fragua nº 20 (Esquina granito), 29603 Marbella</p>
+      <p>Lunes a Viernes 9:00–19:00, Sábado 10:00–14:00</p>
+      <p><a href="tel:+34699589358">+34 699 589 358</a></p>
+    </div>
+  </section>
+</div>
+
+<footer class="foot">
+  <p>Página de prueba interna. No indexada. <a href="../">Volver al inicio</a></p>
+</footer>
+
+<div class="dock">
+  <a class="btn" href="tel:+34699589358">Llamar</a>
+  <a class="btn btn--ghost" href="https://wa.me/34699589358">Whatsapp</a>
+</div>
+
+<script src="../media/manifest.js" defer></script>
+<script src="../js/frames.js" defer></script>
+<script src="../vendor/gsap.min.js" defer></script>
+<script src="../vendor/ScrollTrigger.min.js" defer></script>
+<script src="scroll.js" defer></script>
+</body>
+</html>

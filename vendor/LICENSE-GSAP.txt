@@ -1,0 +1,11 @@
+GSAP 3.15.0 and ScrollTrigger 3.15.0
+Copyright 2026, GreenSock. All rights reserved.
+Subject to the terms at https://gsap.com/standard-license.
+
+The Standard "no charge" license allows commercial use, including the plugins
+that used to be paid. It does not allow using GSAP to build a visual no-code
+animation builder that competes with Webflow.
+
+The copyright notice inside gsap.min.js and ScrollTrigger.min.js is intact.
+SplitText is not shipped: headlines are real HTML, and the scroll page splits
+words in place from that HTML.

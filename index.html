@@ -1,3 +1,189 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex, nofollow"><title>red2-motion-test</title></head>
-<body style="margin:0;background:#0b0b0b;color:#eee;font:16px system-ui;display:grid;place-items:center;min-height:100vh"><p>Preview in progress.</p></body></html>
+<!doctype html>
+<html lang="es" data-root="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#15120f">
+<title>Red2 Auto Gallery · Marbella</title>
+<meta name="description" content="El coche perfecto. El precio ideal. Red2 Auto Gallery y RED2 auto space, Marbella.">
+<link rel="icon" href="img/logo-red2.png">
+<link rel="preload" as="image" href="media/posters/s1.webp" fetchpriority="high">
+<link rel="preload" href="fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/site.css">
+<script>
+document.documentElement.classList.add("js");
+if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.documentElement.classList.add("reduce");
+} else {
+  document.documentElement.classList.add("motion");
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="hdr">
+  <a class="hdr__logo" href="#inicio"><img src="img/logo-red2.png" alt="Red2 Auto Gallery" width="440" height="75"></a>
+  <nav class="hdr__nav" aria-label="Secciones">
+    <a href="#galeria">Galería</a>
+    <a href="#elegir">Elegirnos</a>
+    <a href="#taller">Taller</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="hdr__r" style="display:flex;align-items:center;gap:18px">
+    <p class="lang"><b>ES</b> · [ЗАГЛУШКА: RU/EN]</p>
+    <a class="hdr__phone" href="tel:+34699589358">+34 699 589 358</a>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="hero" id="inicio">
+    <img class="hero__poster" src="media/posters/s1.webp" alt="Fachada de Red2 Auto Gallery en Marbella, con el rótulo de la entrada." width="720" height="405" fetchpriority="high">
+    <video muted playsinline loop preload="metadata" data-hd="media/clips/hero-d.mp4">
+      <source src="media/clips/hero-m.mp4" type="video/mp4">
+    </video>
+    <div class="scrim" aria-hidden="true"></div>
+    <div class="hero__copy">
+      <p class="kicker">Red2 Auto Gallery</p>
+      <h1>El coche perfecto. El precio ideal.</h1>
+      <p class="lead">Obtén financiamiento sin complicaciones y descubre cómo hacer realidad la compra de tu coche ideal.</p>
+      <div class="hero__actions">
+        <a class="btn" href="tel:+34699589358">Llamar</a>
+        <a class="btn btn--ghost" href="https://wa.me/34699589358">Whatsapp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="scrub edge" id="galeria">
+    <div class="scrub__pin" data-scrub>
+    <div class="scrub__stage">
+      <canvas class="scrub__canvas" aria-hidden="true"></canvas>
+      <img class="scrub__still" src="media/posters/s2.webp" alt="Interior del showroom de Red2 Auto Gallery." width="720" height="405" decoding="async">
+      <div class="scrim" aria-hidden="true"></div>
+      <div class="scrub__copy">
+        <p class="kicker">BIENVENIDO A RED2 AUTO GALLERY</p>
+        <h2>Descubre una cuidada selección de vehículos de media y alta gama, revisados íntegramente y listos para disfrutar.</h2>
+        <p class="lead muted">Calidad, transparencia y un servicio personalizado desde Marbella.</p>
+      </div>
+    </div>
+    </div>
+    <div class="scrub__more">
+      <p>Con especialistas a mano para ayudar con cualquier parte de la compra de coches o la experiencia de propiedad de vehículos, RED2 auto gallery ofrece financiación, servicio de automóviles y una gran selección de vehículos compradores de coches en Marbella y toda España.</p>
+    </div>
+  </section>
+
+  <section class="why" id="elegir">
+    <div class="band edge why__media">
+      <img class="band__poster" src="media/posters/s3.webp" alt="Detalle de emblemas de vehículos en el showroom de Red2." width="720" height="405" loading="lazy" decoding="async">
+      <video muted playsinline loop preload="none" data-hd="media/clips/badges-d.mp4">
+        <source src="media/clips/badges-m.mp4" type="video/mp4">
+      </video>
+      <div class="scrim" aria-hidden="true"></div>
+      <div class="band__copy">
+        <p class="kicker">POR QUÉ ELEGIRNOS</p>
+      </div>
+    </div>
+    <div class="why__body panel">
+      <div class="reasons">
+        <article class="reason reveal" style="--d:0ms">
+          <h3>COMPRAMOS VEHÍCULOS</h3>
+          <p>¿Quiere vender su vehículo? Compramos vehículos de todo el país, así que póngase en contacto con nosotros, ya que podemos ayudarle.</p>
+        </article>
+        <article class="reason reveal" style="--d:70ms">
+          <h3>SELECCIONADO PERSONALMENTE</h3>
+          <p>Todos nuestros vehículos se seleccionan personalmente, se inspeccionan profesionalmente y se comprueba que no tienen ningún defecto.</p>
+        </article>
+        <article class="reason reveal" style="--d:140ms">
+          <h3>ATENCIÓN MÁS PERSONAL Y AMIGABLE</h3>
+          <p>Si quieres la calidad que esperas del concesionario, pero con un ambiente más personal y amigable, lo has encontrado. Conocemos a nuestros clientes.</p>
+        </article>
+        <article class="reason reveal" style="--d:210ms">
+          <h3>SERVICIO Y REPARACIÓN DE VEHÍCULOS</h3>
+          <p>Los concesionarios no sólo sirven para comprar un coche, sino también para el mantenimiento periódico que su coche necesitará para mantenerlo en óptimas condiciones, y nosotros lo hacemos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="workshop" id="taller">
+    <div class="band edge">
+      <img class="band__poster" src="media/posters/s4.webp" alt="Elevadores del taller RED2 auto space." width="720" height="405" loading="lazy" decoding="async">
+      <video muted playsinline loop preload="none" data-hd="media/clips/workshop-d.mp4">
+        <source src="media/clips/workshop-m.mp4" type="video/mp4">
+      </video>
+      <div class="scrim" aria-hidden="true"></div>
+      <div class="band__copy">
+        <p class="kicker">RED2 auto space</p>
+        <h2>Taller RED2 auto space es un enfoque de ingeniería combinado con un servicio premium</h2>
+      </div>
+    </div>
+    <div class="workshop__body panel">
+      <h3>Experiencia y tecnología</h3>
+      <ul class="tech">
+        <li class="reveal" style="--d:0ms">Diagnóstico OEM (ODIS, PIWIS, ISTA, entre otros)</li>
+        <li class="reveal" style="--d:40ms">Trabajo con buses CAN y unidades de control electrónico</li>
+        <li class="reveal" style="--d:80ms">Programación, codificación y actualización de software</li>
+        <li class="reveal" style="--d:120ms">Mantenimiento de motores, transmisiones, suspensiones y sistemas de frenos</li>
+        <li class="reveal" style="--d:160ms">Ciclo completo de trabajos de carrocería y pintura</li>
+        <li class="reveal" style="--d:200ms">Detailing, PPF y vinilo</li>
+        <li class="reveal" style="--d:240ms">Tuning, proyectos performance y preparación para circuito y drag racing</li>
+        <li class="reveal" style="--d:280ms">Trabajo certificado con sistemas de escape</li>
+        <li class="reveal" style="--d:320ms">Mantenimiento de vehículos eléctricos e híbridos (acreditación HV)</li>
+      </ul>
+      <ul class="goals">
+        <li>Funcione exactamente según los parámetros de fábrica o incluso mejor</li>
+        <li>Sea seguro, fiable y predecible</li>
+        <li>Conserve su valor y su vida útil</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="stub-wrap" id="stock" aria-label="Stock">
+    <div class="stub">
+      <p>[ЗАГЛУШКА: сток з Dealcar API — у тесті не підключаємо]</p>
+    </div>
+  </section>
+
+  <section class="stub-wrap" id="opiniones" aria-label="Opiniones">
+    <div class="stub">
+      <p>[ЗАГЛУШКА: відгуки — тільки з посиланням на Google-профіль і згодою клієнта]</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <img class="contact__still" src="media/posters/s5.webp" alt="Zona de elevadores del taller RED2 auto space." width="720" height="405" loading="lazy" decoding="async">
+    <div class="scrim" aria-hidden="true"></div>
+    <div class="contact__copy">
+      <p class="kicker">Drag racing</p>
+      <h2>Somos bicampeones de España en drag racing</h2>
+      <address>
+        <p>Calle Fragua nº 20 (Esquina granito)<br>29603 Marbella, España</p>
+        <p>Lunes a Viernes 9:00–19:00, Sábado 10:00–14:00</p>
+        <p><a href="tel:+34699589358">+34 699 589 358</a></p>
+      </address>
+      <div class="contact__actions">
+        <a class="btn" href="tel:+34699589358">Llamar</a>
+        <a class="btn btn--ghost" href="https://wa.me/34699589358">Whatsapp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Página de prueba interna. No indexada.</p>
+  <p><a href="scroll/">Prueba: el scroll mueve el vídeo</a></p>
+</footer>
+
+<div class="dock">
+  <a class="btn" href="tel:+34699589358">Llamar</a>
+  <a class="btn btn--ghost" href="https://wa.me/34699589358">Whatsapp</a>
+</div>
+
+<script src="media/manifest.js" defer></script>
+<script src="js/frames.js" defer></script>
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/landing.js" defer></script>
+</body>
+</html>
