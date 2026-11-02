@@ -1,0 +1,5 @@
+GSAP 3.15.0
+Standard "no charge" license, Webflow.
+Commercial use is allowed. Do not use GSAP to build a no-code visual animation builder that competes with Webflow.
+Files: gsap.min.js, ScrollTrigger.min.js, SplitText.min.js
+Copyright notices inside the minified files are kept.

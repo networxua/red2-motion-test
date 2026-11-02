@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RED2 · catálogo de motion</title>
+<meta name="description" content="Catálogo interno NetWorX: efectos probados sobre material RED2.">
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="lab.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../img/logo-gallery-on-dark.svg" alt="RED2 auto gallery" width="160" height="76"></a>
+  <p class="kicker">Catálogo interno · no es la página del cliente</p>
+  <a class="back" href="../index.html">Inicio</a>
+</header>
+<main>
+  <section class="intro">
+    <p class="kicker">NetWorX · RED2</p>
+    <h1>Qué se siente caro,<br>y qué solo pesa.</h1>
+    <p class="lead">Cada tarjeta es un efecto vivo sobre textos y color de RED2. La página del cliente usa cuatro de ellos. El resto se queda aquí para decidir el estándar.</p>
+  </section>
+
+  <article class="demo" id="anime-text">
+    <header>
+      <p class="kicker">Anime.js 4.5 · MIT</p>
+      <h2>Palabras con blur</h2>
+    </header>
+    <div class="stage stage--type">
+      <p class="display" data-split>Más rápido en Marbella.</p>
+      <button type="button" class="replay" data-replay="text">Repetir</button>
+    </div>
+    <p class="when">Primer pantallazo. Un titular, no un párrafo.</p>
+  </article>
+
+  <article class="demo" id="anime-draw">
+    <header>
+      <p class="kicker">Anime.js 4.5 · svg.createDrawable</p>
+      <h2>Trazo de línea</h2>
+    </header>
+    <div class="stage">
+      <svg class="draw" viewBox="0 0 640 160" aria-hidden="true">
+        <path id="lane" d="M20 120 C 80 120 90 30 170 40 S 280 140 360 90 470 20 620 48" fill="none" stroke="#c1272d" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <button type="button" class="replay" data-replay="draw">Repetir</button>
+    </div>
+    <p class="when">Una línea de marca. No un gráfico de datos inventado.</p>
+  </article>
+
+  <article class="demo" id="anime-path">
+    <header>
+      <p class="kicker">Anime.js 4.5 · createMotionPath</p>
+      <h2>Movimiento sobre una curva</h2>
+    </header>
+    <div class="stage stage--path">
+      <svg viewBox="0 0 640 180" aria-hidden="true">
+        <path id="orbit" d="M40 140 C 120 140 140 30 240 40 S 400 160 500 80 580 40 610 70" fill="none" stroke="rgba(236,230,220,.35)" stroke-width="1.5"/>
+      </svg>
+      <i class="dot" aria-hidden="true"></i>
+      <button type="button" class="replay" data-replay="path">Repetir</button>
+    </div>
+    <p class="when">Un punto o un detalle, no el coche entero. El coche real va en /scroll/.</p>
+  </article>
+
+  <article class="demo" id="motion-spring">
+    <header>
+      <p class="kicker">Motion 14.9 · MIT · animate spring</p>
+      <h2>Botón con muelle</h2>
+    </header>
+    <div class="stage stage--center">
+      <a class="btn" href="https://wa.me/34699589358">WhatsApp</a>
+      <p class="hint">Pasa el cursor o pulsa.</p>
+    </div>
+    <p class="when">CTA. En el landing se carga el archivo solo al primer gesto: 58 KB gzip no entran en el primer pantallazo.</p>
+  </article>
+
+  <article class="demo" id="motion-list">
+    <header>
+      <p class="kicker">Motion 14.9 · FLIP con animate</p>
+      <h2>Lista que se reordena</h2>
+    </header>
+    <div class="stage">
+      <ul class="slist" id="slist">
+        <li>Diagnóstico OEM</li>
+        <li>Detailing, PPF y vinilo</li>
+        <li>Mantenimiento HV</li>
+        <li>Alineación 3D</li>
+      </ul>
+      <button type="button" class="replay" data-replay="list">Reordenar</button>
+    </div>
+    <p class="when">Filtros de stock, si algún día hay stock de verdad. Aquí es una prueba, no un catálogo.</p>
+  </article>
+
+  <article class="demo" id="beam">
+    <header>
+      <p class="kicker">21st.dev · border beam · vanilla CSS</p>
+      <h2>Borde que recorre el CTA</h2>
+    </header>
+    <div class="stage stage--center">
+      <a class="btn beam" href="tel:+34699589358">Llamar</a>
+    </div>
+    <p class="when">Un botón principal. Cero kilobytes de librería. La idea es de 21st, el código es nuestro.</p>
+  </article>
+
+  <article class="demo" id="spot">
+    <header>
+      <p class="kicker">21st.dev / Kokonut · spotlight · vanilla</p>
+      <h2>Luz que sigue al cursor</h2>
+    </header>
+    <div class="stage">
+      <div class="spot">
+        <p class="kicker">Por qué RED2</p>
+        <h3>Taller propio al lado</h3>
+        <p>Showroom y taller son un equipo. Antes de comprar, nuestros mecánicos pueden ver el coche.</p>
+      </div>
+    </div>
+    <p class="when">Tres tarjetas como máximo, y solo con ratón. En el teléfono no se enciende.</p>
+  </article>
+
+  <article class="demo" id="stack">
+    <header>
+      <p class="kicker">MotionSites · sticky stack + scrim · MIT technique</p>
+      <h2>Tarjetas que se apilan</h2>
+    </header>
+    <div class="stack">
+      <article class="stack__c">
+        <p class="kicker">01</p>
+        <h3>Auto galería</h3>
+        <p>Calle Fragua 20, esquina C. Granito.</p>
+      </article>
+      <article class="stack__c">
+        <p class="kicker">02</p>
+        <h3>Taller</h3>
+        <p>C. Platino 1 · Lun–Vie 9–19.</p>
+      </article>
+      <article class="stack__c">
+        <p class="kicker">03</p>
+        <h3>Drag</h3>
+        <p>Somos bicampeones de España en drag racing.</p>
+      </article>
+    </div>
+    <p class="when">Bloques cortos en desktop. En el teléfono quedan en flujo normal: sin scroll-jacking.</p>
+  </article>
+
+  <article class="demo" id="scrub">
+    <header>
+      <p class="kicker">Scroll-video · GSAP ScrollTrigger</p>
+      <h2>El coche avanza con el scroll</h2>
+    </header>
+    <a class="stage stage--link" href="../scroll/">
+      <img src="../scroll/media/s2.webp" alt="Showroom RED2, sin personas">
+      <span>Abrir /scroll/</span>
+    </a>
+    <p class="when">Una sola firma por página. En el landing no está: vive en su propia URL, con un corte sin personas.</p>
+  </article>
+</main>
+<script src="../vendor/anime.umd.min.js"></script>
+<script src="../vendor/motion.js"></script>
+<script src="lab.js"></script>
+</body>
+</html>
